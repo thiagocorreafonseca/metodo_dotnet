@@ -73,5 +73,23 @@ Console.WriteLine($"Maior Ou Igual: {maiorOuIgual}");
 Console.WriteLine($"Menor Ou Igual: {menorOuIgual}");
 Console.WriteLine($"Igual: {igual}");
 Console.WriteLine($"Diferente: {diferente}");
+#endregion
 
+Console.WriteLine("");
+Console.WriteLine($"---------");
+
+#region Operadores Logicos
+bool x = true;
+bool y = false;
+
+var and = x && y; //AND
+var or = x || y; //OR
+var notX = !x; //NOT
+var notY = !y; //NOT
+
+Console.WriteLine($"X:{x} | Y:{y}");
+Console.WriteLine($"And: {and}");
+Console.WriteLine($"Or: {or}");
+Console.WriteLine($"NotX: {notX}");
+Console.WriteLine($"NotY: {notY}");
 #endregion
