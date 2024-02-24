@@ -93,3 +93,23 @@ Console.WriteLine($"Or: {or}");
 Console.WriteLine($"NotX: {notX}");
 Console.WriteLine($"NotY: {notY}");
 #endregion
+
+Console.WriteLine("");
+Console.WriteLine($"---------");
+
+#region Operadores de Igualdade e Atribuicao
+int k = 5;
+k = 10;
+Console.WriteLine($"K: {k}");
+
+k += 5;
+Console.WriteLine($"K += 5: {k}");
+k -= 3;
+Console.WriteLine($"K -= 3: {k}");
+k *= 2;
+Console.WriteLine($"K *= 2: {k}");
+k /= 4;
+Console.WriteLine($"K /= 4: {k}");
+k %= 5;
+Console.WriteLine($"K %= 5: {k}");
+#endregion
