@@ -113,3 +113,68 @@ Console.WriteLine($"K /= 4: {k}");
 k %= 5;
 Console.WriteLine($"K %= 5: {k}");
 #endregion
+
+#region Estruturas de Condicao IF_ELSE
+var nota = 75;
+
+if (nota >= 70)
+{
+    Console.WriteLine("Aprovado.");
+}
+else if(nota >= 30)
+{
+    Console.WriteLine("Recuperação.");
+}
+else
+{
+    Console.WriteLine("Reprovado.");
+}
+#endregion
+
+#region Estruturas de Condicao - SWITCH_CASE
+var opcao = 2;
+
+switch (opcao)
+{
+    case 1:
+        Console.WriteLine("Opcao 1");
+        break;
+
+    case 2:
+        Console.WriteLine("Opcao 2");
+        break;
+
+    case 3:
+        Console.WriteLine("Opcao 3");
+        break;
+
+    default:
+        Console.WriteLine("Opcao DESCONHECIDA");
+        break;
+}
+
+switch (nota)
+{
+    case int n when (n >= 70):
+        Console.WriteLine("Aprovado");
+        break;
+
+    case int n when (n <= 30):
+        Console.WriteLine("Reprovado");
+        break;
+
+    default:
+        break;
+}
+
+string textoNumero = opcao switch
+{
+    1 => "UM",
+    2 => "DOIS",
+    3 => "TRES",
+    _ => "DESCONHECIDO"
+
+};
+
+Console.WriteLine(textoNumero);
+#endregion
