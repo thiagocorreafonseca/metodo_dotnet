@@ -52,3 +52,26 @@ Console.WriteLine($"Divisao: {divisao}");
 Console.WriteLine($"Modulo: {modulo}");
 #endregion
 
+Console.WriteLine("");
+Console.WriteLine($"---------");
+
+#region Operadores Comparacao
+var p = 5;
+var q = 10;
+
+bool maior = p > q;
+bool menor = p < q;
+bool maiorOuIgual = p >= q;
+bool menorOuIgual = p <= q;
+bool igual = p == q;
+bool diferente = p != q;
+
+Console.WriteLine($"P:{p} | Q:{q}");
+Console.WriteLine($"Maior: {maior}");
+Console.WriteLine($"Menor: {menor}");
+Console.WriteLine($"Maior Ou Igual: {maiorOuIgual}");
+Console.WriteLine($"Menor Ou Igual: {menorOuIgual}");
+Console.WriteLine($"Igual: {igual}");
+Console.WriteLine($"Diferente: {diferente}");
+
+#endregion
