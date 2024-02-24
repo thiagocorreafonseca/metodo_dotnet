@@ -16,6 +16,10 @@ string valorString = "Thiago";
 
 const double PI = 3.1415;
 
+Console.WriteLine("");
+Console.WriteLine($"---------");
+
+#region Tipos e Variaveis
 Console.WriteLine($"Double: {valorDouble}");
 Console.WriteLine($"Float: {valorFloat}");
 Console.WriteLine($"Int: {valorInteiro}");
@@ -26,4 +30,25 @@ Console.WriteLine($"Char: {valorChar}");
 Console.WriteLine($"String: {valorString}");
 Console.WriteLine($"---------");
 Console.WriteLine($"CONST: {PI}");
+#endregion
+
+Console.WriteLine("");
+Console.WriteLine($"---------");
+
+#region Operadores Aritmeticos
+int a = 10;
+int b = 20;
+
+int soma = a + b;
+int subtracao = a - b;
+int multiplicacao = a * b;
+int divisao = b / a;
+int modulo = a % b;
+
+Console.WriteLine($"Soma: {soma}");
+Console.WriteLine($"Subtracao: {subtracao}");
+Console.WriteLine($"Multiplicacao: {multiplicacao}");
+Console.WriteLine($"Divisao: {divisao}");
+Console.WriteLine($"Modulo: {modulo}");
+#endregion
 
