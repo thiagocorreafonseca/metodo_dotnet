@@ -178,3 +178,20 @@ string textoNumero = opcao switch
 
 Console.WriteLine(textoNumero);
 #endregion
+
+#region Matrizes
+int[] matriz = { 1, 2, 3, 4, 5, 6 };
+int[] matrizVazia = new int[5];
+
+var tamanhoMatriz = matriz.Length;
+var dimensaoMatriz = matriz.Rank;
+
+Console.WriteLine($"Tamanho Matriz: {tamanhoMatriz}");
+Console.WriteLine($"Dimensao Matriz: {dimensaoMatriz}");
+
+Array.Sort(matriz);
+Array.Reverse(matriz);
+
+Console.ReadLine();
+
+#endregion
