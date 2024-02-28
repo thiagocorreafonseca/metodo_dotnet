@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.Security.Cryptography;
+
 Console.WriteLine("Hello, World!");
 
 var nome = Console.ReadLine();
@@ -191,7 +193,39 @@ Console.WriteLine($"Dimensao Matriz: {dimensaoMatriz}");
 
 Array.Sort(matriz);
 Array.Reverse(matriz);
+#endregion
+
+#region Estruturas de Repetição
+int[] matrizz = { 1, 2, 3, 4, 5, 6 };
+
+Console.WriteLine("While");
+int contador = 0;
+while (contador < matrizz.Length)
+{
+    Console.WriteLine(matrizz[contador]);
+    contador ++;
+}
+
+Console.WriteLine("Do-While");
+contador = 0;
+
+do
+{
+    Console.WriteLine(matrizz[contador]);
+    contador ++;
+} while (contador < matrizz.Length);
+
+Console.WriteLine("For");
+for (int i = 0; i < matrizz.Length; i++)
+{
+    Console.WriteLine(matriz[i]);
+}
+
+Console.WriteLine("For Each");
+foreach (int numero in matrizz)
+{
+    Console.WriteLine(numero);
+}
+#endregion
 
 Console.ReadLine();
-
-#endregion
