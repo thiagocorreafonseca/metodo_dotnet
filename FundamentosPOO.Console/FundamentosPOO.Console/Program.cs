@@ -28,11 +28,21 @@ public class Pessoa
 
     public void Apresentar()
     {
-        Console.WriteLine($"{Nome}, {Profissao}, {Telefone}, {Salario}");
+        Console.WriteLine(FormatarMensagem());
+    }
+
+    private string FormatarMensagem()
+    {
+        return $"{Nome}, {Profissao}, {Telefone}";
     }
 }
 
 public class Funcionario: Pessoa
 {
+    public Funcionario() { }
+    public Funcionario(string nome, string profissao, string telefone, int salario) : base(nome, profissao, telefone)
+    {
+        Salario = salario;
+    }
     public double Salario { get; set; }
 }
